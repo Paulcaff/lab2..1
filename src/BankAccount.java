@@ -28,7 +28,7 @@ public class BankAccount {
     public BankAccount(){
       this.accnum = "20698734";
       this.balance = 0;
-      this.customer = Person();
+      this.customer = customer;
     }
 
     public BankAccount(String accnum,double balance,Person customer){

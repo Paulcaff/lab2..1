@@ -1,10 +1,11 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class Film {
     private String title;
     private String director;
     private int duration;
-    private int filmcounter;
+    private int filmcounter = 0 ;
 
     public int getDuration() {
         return duration;
@@ -38,6 +39,7 @@ public class Film {
         setTitle(title);
         setDirector(director);
         setDuration(duration);
+        filmcounter ++;
     }
 
     public Film() {
@@ -50,13 +52,20 @@ public class Film {
         return "\nTitle :" + title + "\nDirector :" + director + "\nDuration : " + duration;
     }
 
-    public void displayFilms(int number) {
-
+    public static void displayFilms(int number,Film[] catalog) {
+        Film film3 = new Film();
         JTextArea jta = new JTextArea();
+        Font font = new Font("monospaced", Font.PLAIN, 12);
+
 
         for (int i = 0; i < number; i++) {
 
-           catalog.append(jta);
+            film3 = catalog[i];
+
+            System.out.println(film3.getTitle());
+
+
+           jta.append(film3.toString());
 
 
         }
