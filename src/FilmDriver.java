@@ -17,7 +17,7 @@ public class FilmDriver {
 
           String  title = JOptionPane.showInputDialog(null,"Please enter the title of the movie: ");
           String  director = JOptionPane.showInputDialog(null,"Please enter the director of the movie: ");
-          int duration =Integer.parseInt( JOptionPane.showInputDialog(null,"Please enter the director of the movie: "));
+          int duration =Integer.parseInt( JOptionPane.showInputDialog(null,"Please enter the duration of the movie: "));
 
 
             Film film2 = new Film(title,director,duration);
