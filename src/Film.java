@@ -6,7 +6,11 @@ public class Film {
     private String director;
     private int duration;
     private int filmcounter = 0 ;
-
+//accessor methods
+    /**
+     *
+     * @return The
+     */
     public int getDuration() {
         return duration;
     }
@@ -23,6 +27,11 @@ public class Film {
         return filmcounter;
     }
 
+    //Mutator methods
+    /**
+     *
+     * @param director The director of the Film object
+     */
     public void setDirector(String director) {
         this.director = director;
     }
@@ -42,6 +51,9 @@ public class Film {
         filmcounter ++;
     }
 
+    /**
+     *
+     */
     public Film() {
         this.title = "None";
         this.director = "None";
